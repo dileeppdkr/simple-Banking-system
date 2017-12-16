@@ -6,7 +6,9 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-	Need ruby ruby-2.4.1, Install through RVM
+	Need ruby ruby-2.4.1
+	Follow the instructions:
+	https://rvm.io/rvm/install
 * System dependencies
 	rails', 5.1.4
 	
