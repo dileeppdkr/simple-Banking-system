@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Deposits</h1>
+<%= will_paginate %>
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Date</th>
+      <th>Amount</th>
+      <th colspan=""></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deposits.each do |deposit| %>
+      <tr>
+        <td><%= deposit.user.name %></td>
+        <td><%= deposit.date %></td>
+        <td>Rs <%= deposit.amount %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  
+</table>
+<br/><br/>
+<table>
+  <thead>
+    <tr>
+      <th>Total Balance: Rs <%=current_user.balance%></th>
+    </tr>
+  </thead>
+</table>
+<br>
+
+<%= link_to 'New Deposit', new_deposit_path %>
+<style type="text/css">
+  th,td{
+    width: 10%;
+  }
+</style>
