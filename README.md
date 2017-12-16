@@ -8,8 +8,8 @@ Things you may want to cover:
 * Ruby version
 	Need ruby ruby-2.4.1, Install through RVM
 * System dependencies
-	rails', '~> 5.1.4'
-	'pg', '~> 0.18'
+	rails', 5.1.4
+	
 	'will_paginate'
 	'bootstrap-will_paginate'
 	'bcrypt'
@@ -17,7 +17,7 @@ Things you may want to cover:
 
 * Database creation
 	enable_extension "plpgsql"
-
+	required 'pg', '~> 0.18'
   create_table "deposits", force: :cascade do |t|
     t.date "date"
     t.float "amount"
